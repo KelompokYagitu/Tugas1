@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind Mapping: Penanaman Kelapa Sawit</title>
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f1f7f2;
+  color: #333;
+  text-align: center;
+}
+h1 {
+  color: #2e7d32;
+}
+.node {
+  background-color: #a5d6a7;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.node:hover {
+  background-color: #81c784;
+}
+.content {
+  display: none;
+  text-align: left;
+  margin: 30px auto;
+  max-width: 900px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.graph {
+  text-align: center;
+}
+.graph img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+</style>
+<script>
+function showContent(id) {
+  document.querySelectorAll('.content').forEach(c => c.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+}
+</script>
+</head>
+<body>
+
+<h1>🌴 Mind Mapping: Penanaman Kelapa Sawit</h1>
+<p>Klik salah satu subjudul untuk melihat penjelasan detailnya:</p>
+
+<div class="node" onclick="showContent('lcc')">1️⃣ Penanaman LCC</div>
+<div class="node" onclick="showContent('jarak')">2️⃣ Pengaturan Jarak Tanam</div>
+<div class="node" onclick="showContent('lubang')">3️⃣ Pembuatan Lubang Tanam</div>
+<div class="node" onclick="showContent('penanaman')">4️⃣ Penanaman</div>
+<div class="node" onclick="showContent('tbm0')">5️⃣ Perawatan TBM 0</div>
+
+<!-- Penanaman LCC -->
+<div id="lcc" class="content">
+  <h2>1️⃣ Penanaman LCC (Legume Cover Crop)</h2>
+  <p>
+    LCC adalah tanaman penutup tanah dari jenis kacang-kacangan seperti <b>Centrosema pubescens, Pueraria javanica, Calopogonium mucunoides</b>.  
+    Tujuannya:
+  </p>
+  <ul>
+    <li>Menekan pertumbuhan gulma liar.</li>
+    <li>Meningkatkan kadar nitrogen tanah melalui fiksasi biologis.</li>
+    <li>Mencegah erosi dan menjaga kelembapan tanah.</li>
+  </ul>
+  <h3>Contoh Perhitungan:</h3>
+  <p>
+    - Kebutuhan benih LCC = 10 kg per hektar.<br>
+    - Jika luas areal 50 ha, maka benih yang dibutuhkan = 10 × 50 = <b>500 kg</b>.
+  </p>
+  <div class="graph">
+    <img src="lcc.jpg" alt="Contoh Tanaman LCC">
+    <p><i>Gambar: Tanaman LCC di antara barisan kelapa sawit muda.</i></p>
+  </div>
+</div>
+
+<!-- Pengaturan Jarak Tanam -->
+<div id="jarak" class="content">
+  <h2>2️⃣ Pengaturan Jarak Tanam</h2>
+  <p>
+    Jarak tanam ideal kelapa sawit adalah <b>9 m × 9 m</b> dengan sistem segitiga sama sisi.
+    Hal ini memastikan distribusi cahaya merata dan ruang tumbuh optimal.
+  </p>
+  <h3>Perhitungan Populasi Pohon:</h3>
+  <p>
+    Rumus populasi/ha = 10.000 / (jarak × jarak × 0,866)<br>
+    = 10.000 / (9 × 9 × 0,866) = <b>~143 pohon per hektar</b>.
+  </p>
+  <div class="graph">
+    <img src="pola.jpeg" alt="Pola tanam segitiga">
+    <p><i>Gambar: Pola segitiga sama sisi untuk jarak tanam kelapa sawit.</i></p>
+  </div>
+</div>
+
+<!-- Pembuatan Lubang Tanam -->
+<div id="lubang" class="content">
+  <h2>3️⃣ Pembuatan Lubang Tanam</h2>
+  <p>
+    Lubang tanam dibuat dengan ukuran standar <b>60 × 60 × 60 cm</b>.  
+    Tujuannya agar akar dapat berkembang bebas dan pupuk organik dapat tertampung di dasar lubang.
+  </p>
+  <h3>Langkah:</h3>
+  <ol>
+    <li>Buat lubang 1–2 bulan sebelum tanam agar tanah mengering dan mikroba aktif.</li>
+    <li>Masukkan pupuk dasar (misalnya kompos 5 kg per lubang).</li>
+  </ol>
+  <h3>Contoh Perhitungan:</h3>
+  <p>
+    Untuk 1 ha dengan 143 pohon → 143 × 5 kg = <b>715 kg kompos per hektar</b>.
+  </p>
+</div>
+
+<!-- Penanaman -->
+<div id="penanaman" class="content">
+  <h2>4️⃣ Penanaman</h2>
+  <p>
+    Penanaman dilakukan pada awal musim hujan untuk menghindari kekeringan.
+    Bibit dipindahkan dari polybag ke lubang tanam dengan hati-hati agar akar tidak rusak.
+  </p>
+  <h3>Langkah Teknis:</h3>
+  <ul>
+    <li>Keluarkan bibit dari polybag.</li>
+    <li>Letakkan di tengah lubang, tutup tanah setinggi leher akar.</li>
+    <li>Padatkan tanah perlahan dan beri ajir penanda.</li>
+  </ul>
+  <div class="graph">
+    <img src="tanam.jpeg" alt="Penanaman bibit sawit">
+    <p><i>Gambar: Proses penanaman bibit kelapa sawit di lapangan.</i></p>
+  </div>
+</div>
+
+<!-- Perawatan TBM 0 -->
+<div id="tbm0" class="content">
+  <h2>5️⃣ Perawatan TBM 0 (Tanaman Belum Menghasilkan)</h2>
+  <p>
+    Masa TBM 0 adalah tahun pertama setelah tanam (0–12 bulan).  
+    Fokus utama adalah:
+  </p>
+  <ul>
+    <li>Pengendalian gulma di sekitar piringan (radius 1 m dari batang).</li>
+    <li>Pemupukan 2–3 kali per tahun menggunakan NPK 15-15-15.</li>
+    <li>Perbaikan drainase dan kontrol hama seperti ulat api atau tikus.</li>
+  </ul>
+  <h3>Contoh Perhitungan Pupuk:</h3>
+  <p>
+    Dosis 0,5 kg/pohon × 143 pohon = <b>71,5 kg NPK per hektar per kali aplikasi</b>.
+  </p>
+  <div class="graph">
+    <img src="pemupukan kelapa-sawit.jpg" alt="Perawatan TBM 0">
+    <p><i>Gambar: Pemeliharaan kelapa sawit muda (TBM 0).</i></p>
+  </div>
+</div>
+
+</body>
+</html>
